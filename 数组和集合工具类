@@ -1,0 +1,11 @@
+在java中，常用的数据类型集合有数组和集合
+java用来处理的数组的工具类有Arrays
+用来处理的集合的工具类有Collections
+常用的数组转list方法有例如Arrays.asList(数组)，或者排序方法Array.sort(数组)
+而arraylist转数组的方法则为arraylist.toArray(数组)
+该方法为list的内置方法
+        String[] sh=new String[9];
+        String[] sh1=new String[9];
+        sh1=stringList.toArray(sh);
+        System.out.println(sh.length);
+在此处可以看到，我想将stringlist转换为数组，将要赋值的数组当作参数，然后方法内部开始执行转换操作然后再将参数return，因此在上面这段代码中，sh1和sh指向了相同的地址。
